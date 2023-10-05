@@ -1,0 +1,32 @@
+here are my C naming conventions
+
+note:
+
+        a lot of them are lowercase, i like the lowercase aesthetic better than
+        the uppercase one
+
+naming:
+
+        Struct                  can be either Uppercase or lowercase, underlines
+                                aren't required
+
+        Struct Members          If members won't be exposed to the user, prefix them with '__'
+        
+        Local Variables         [a-z] or __[a-z]
+        Global Variables        never
+        Constant Variables      FULL_CASE_AND_UNDERLINED
+
+        Pointers                depends on the kind of pointer - if it's a
+                                CONSTANT pointer then you could possibly use Uppercase, it depends on
+                                the mutability of the referenced data point
+                                itself.
+                                
+        Enums                   [default]s (add the s to the end in most cases)
+        
+        Defines                 UPPERCASE (W/ UNDERLINE)
+
+        Functions               Depends on if they are exposed externally, if
+                                they're helper functions then they will be prefixed with either one or
+                                two underlines. otherwise they're normal C
+                                naming.
+        
